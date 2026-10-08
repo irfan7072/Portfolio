@@ -1,61 +1,111 @@
+```html
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Resume</title>
 
+    <!-- ========================================= -->
+    <!-- Grafana Faro Web Performance Monitoring -->
+    <!-- ========================================= -->
+
+    <script>
+        (function () {
+            var webSdkScript = document.createElement("script");
+
+            // Load Grafana Faro Web SDK
+            webSdkScript.src =
+                "https://unpkg.com/@grafana/faro-web-sdk@2/dist/bundle/faro-web-sdk.iife.js";
+
+            webSdkScript.onload = () => {
+
+                // Initialize Grafana Faro
+                window.GrafanaFaroWebSdk.initializeFaro({
+                    url: "https://faro-collector-prod-ap-south-1.grafana.net/collect/6a7aa2d2483044ac930189000a4e7ccd",
+
+                    app: {
+                        name: "web-resume-portfolio",
+                        version: "1.0.0",
+                        environment: "production"
+                    }
+                });
+
+                // Load Grafana Faro Web Tracing
+                var webTracingScript = document.createElement("script");
+
+                webTracingScript.src =
+                    "https://unpkg.com/@grafana/faro-web-tracing@2/dist/bundle/faro-web-tracing.iife.js";
+
+                webTracingScript.onload = () => {
+
+                    // Add tracing instrumentation
+                    window.GrafanaFaroWebSdk.faro.instrumentations.add(
+                        new window.GrafanaFaroWebTracing.TracingInstrumentation()
+                    );
+
+                };
+
+                // Add tracing script to the page
+                document.head.appendChild(webTracingScript);
+            };
+
+            // Add Faro SDK script to the page
+            document.head.appendChild(webSdkScript);
+        })();
+    </script>
+
     <style>
-body {
-    margin: 0;
-    padding: 40px 0;
-    background: linear-gradient(to right, #dbeafe, #f0f9ff);
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-}
+        body {
+            margin: 0;
+            padding: 40px 0;
+            background: linear-gradient(to right, #dbeafe, #f0f9ff);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
 
-.box {
-    width: 800px;
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
+        .box {
+            width: 800px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
 
-h1 {
-    text-align: center;
-    color: #0f172a;
-    margin-bottom: 5px;
-}
+        h1 {
+            text-align: center;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
 
-h3 {
-    color: #2563eb;
-    border-bottom: 2px solid #2563eb;
-    padding-bottom: 5px;
-    margin-top: 30px;
-}
+        h3 {
+            color: #2563eb;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
 
-h4 {
-    color: #1e293b;
-    margin-bottom: 5px;
-}
+        h4 {
+            color: #1e293b;
+            margin-bottom: 5px;
+        }
 
-p {
-    color: #444;
-    line-height: 1.6;
-    margin: 5px 0;
-}
+        p {
+            color: #444;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
 
-hr {
-    border: none;
-    height: 2px;
-    background: #2563eb;
-    margin-bottom: 20px;
-}
+        hr {
+            border: none;
+            height: 2px;
+            background: #2563eb;
+            margin-bottom: 20px;
+        }
 
-b {
-    color: #111827;
-}
+        b {
+            color: #111827;
+        }
     </style>
 
 </head>
@@ -64,7 +114,7 @@ b {
 
     <div class="box">
 
-        <h1>IRFAN SHAIK</h1>
+        <h1>SHAIK IRFAN</h1>
         <hr width="100%" size="3">
 
         <p><b>Integrated M.Tech (CSE)</b></p>
@@ -190,3 +240,4 @@ b {
 </body>
 
 </html>
+```
