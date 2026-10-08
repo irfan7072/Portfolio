@@ -46,514 +46,188 @@
   })();
 </script>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-scroll-behavior:smooth;
+body {
+    margin: 0;
+    padding: 40px 0;
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
-body{
-background:#f5f5f5;
-color:#222;
-line-height:1.6;
+.box {
+    width: 800px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#1e3a8a;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
+h1 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 5px;
 }
 
-.logo{
-font-size:26px;
-font-weight:bold;
-color:white;
+h3 {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 5px;
+    margin-top: 30px;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
+h4 {
+    color: #1e293b;
+    margin-bottom: 5px;
 }
 
-nav a:hover{
-text-decoration:underline;
+p {
+    color: #444;
+    line-height: 1.6;
+    margin: 5px 0;
 }
 
-section{
-padding:80px 10%;
+hr {
+    border: none;
+    height: 2px;
+    background: #2563eb;
+    margin-bottom: 20px;
 }
 
-.hero{
-height:100vh;
-background:#4f8edc;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+b {
+    color: #111827;
 }
-
-.hero h1{
-font-size:52px;
-margin-bottom:15px;
-}
-
-.hero h2{
-font-size:26px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:18px;
-max-width:650px;
-margin:auto;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 30px;
-background:white;
-color:#1e3a8a;
-text-decoration:none;
-border:1px solid #1e3a8a;
-}
-
-.btn:hover{
-background:#dddddd;
-}
-
-.title{
-text-align:center;
-font-size:34px;
-color:#1e3a8a;
-margin-bottom:35px;
-}
-
-.about{
-text-align:center;
-max-width:850px;
-margin:auto;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-border:1px solid #ccc;
-padding:20px;
-text-align:center;
-}
-
-.card h3{
-margin-bottom:10px;
-color:#1e3a8a;
-}
-
-.timeline{
-max-width:850px;
-margin:auto;
-}
-
-.timeline-item{
-background:white;
-border:1px solid #ccc;
-padding:20px;
-margin-bottom:20px;
-}
-
-.timeline-item h3{
-color:#1e3a8a;
-margin-bottom:10px;
-}
-
-.project{
-background:white;
-border:1px solid #ccc;
-padding:20px;
-margin-bottom:20px;
-}
-
-.project h3{
-color:#1e3a8a;
-margin-bottom:10px;
-}
-
-.contact{
-max-width:650px;
-margin:auto;
-background:white;
-border:1px solid #ccc;
-padding:25px;
-text-align:center;
-}
-
-.contact p{
-margin:10px 0;
-}
-
-footer{
-background:#1e3a8a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
-}
-
-@media(max-width:768px){
-
-header{
-flex-direction:column;
-padding:12px;
-}
-
-nav{
-margin-top:10px;
-}
-
-nav a{
-display:inline-block;
-margin:8px;
-}
-
-.hero{
-height:auto;
-padding:120px 20px 80px;
-}
-
-.hero h1{
-font-size:38px;
-}
-
-.hero h2{
-font-size:22px;
-}
-
-.title{
-font-size:28px;
-}
-
-}
-
-</style>
+    </style>
 
 </head>
 
 <body>
 
-<header>
-
-<div class="logo"></div>
-
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#education">Education</a>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>Hi, I'm Shaik Irfan</h1>
-
-<h2>Integrated M.Tech (Computer Science & Engineering)</h2>
-
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2 class="title">About Me</h2>
-
-<div class="about">
-
-<p>
-
-To obtain a challenging Software Engineer role where I can apply
-my programming skills, contribute to innovative real-world
-projects, and continue growing through collaboration,
-creativity, and continuous learning.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="skills">
-
-<h2 class="title">Skills</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Programming</h3>
-
-<p>
-Python<br>
-Java<br>
-SQL
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Computer Science</h3>
-
-<p>
-Data Structures<br>
-Algorithms
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Soft Skills</h3>
-
-<p>
-Communication<br>
-Problem Solving<br>
-Critical Thinking<br>
-Teamwork
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Languages</h3>
-
-<p>
-English<br>
-Hindi<br>
-Telugu<br>
-Urdu
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="education">
-
-<h2 class="title">Education</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<h3>Integrated M.Tech (Computer Science & Engineering)</h3>
-
-<p><strong>VIT-AP University, Andhra Pradesh</strong></p>
-
-<p>Expected Graduation: <strong>2028</strong></p>
-
-<p>CGPA: <strong>8.89</strong></p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>12th Grade (PCM)</h3>
-
-<p><strong>Sri Swarnandhara Bharathi Junior College</strong></p>
-
-<p>Gudur, Andhra Pradesh</p>
-
-<p>Percentage: <strong>96.5%</strong></p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>10th Grade</h3>
-
-<p><strong>Ratnam High School</strong></p>
-
-<p>Gudur, Andhra Pradesh</p>
-
-<p>Percentage: <strong>98%</strong></p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="projects">
-
-<h2 class="title">Projects</h2>
-
-<div class="project">
-
-<h3>Human Resource Management Website</h3>
-
-<p>
-
-Developed the frontend of a Human Resource Management
-Website using HTML, CSS and JavaScript.
-
-</p>
-
-<br>
-
-<p>
-
-<b>Features:</b>
-
-Login System, Employee Details,
-Attendance Tracking,
-Salary Information,
-Leave Application.
-
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Gaming Controller Using Arduino</h3>
-
-<p>
-
-Designed and built an Arduino-based Gaming Controller
-for the Engineering Clinics project.
-
-</p>
-
-<br>
-
-<p>
-
-<b>Achievement:</b>
-
-Selected for the Engineering Expo —
-1 of only <b>37 projects</b> chosen from
-<b>881 entries</b>.
-
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>AgriCare</h3>
-
-<p>
-
-Developed a Machine Learning solution that identifies crop
-diseases using leaf images and recommends suitable crops
-based on soil and weather conditions.
-
-</p>
-
-</div>
-
-<div class="project">
-
-<h3>Automatic Essay Grading System</h3>
-
-<p>
-
-Built a Deep Learning based Automated Essay Grading System
-using the BERT model to evaluate essays and provide
-intelligent feedback.
-
-</p>
-
-<br>
-
-<p>
-
-<b>Achievement:</b>
-
-Selected for Engineering Expo —
-1 of only <b>76 projects</b> chosen from
-<b>1006 entries</b>.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="experience">
-
-<h2 class="title">Experience</h2>
-
-<div class="project">
-
-<h3>GDGoC VIT-AP</h3>
-
-<p><b>October 2024 – Present</b></p>
-
-<br>
-
-<ul style="padding-left:20px;line-height:2;">
-
-<li>Member of the GDG App Development Team.</li>
-
-<li>Contributed to developing the GDG App.</li>
-
-<li>Participated in Google's 2025 Solution Challenge.</li>
-
-<li>Completed Gen AI Study Jams via Google Cloud Skill Boost.</li>
-
-</ul>
-
-</div>
-
-</section>
-
-
-<section id="contact">
-
-<h2 class="title">Contact</h2>
-
-<div class="contact">
-
-<p><strong>Email</strong></p>
-<p>irfan.23mic7072@vitapstudent.ac.in</p>
-
-<br>
-
-<p><strong>Location</strong></p>
-<p>Andhra Pradesh, India</p>
-
-<br>
-
-
-</div>
-
-</section>
-
+    <div class="box">
+
+        <h1>SHAIK IRFAN</h1>
+        <hr width="100%" size="3">
+
+        <p><b>Integrated M.Tech (CSE)</b></p>
+
+        <br>
+
+        <h3>Career Objective</h3>
+        <p>
+            To obtain a challenging role as a Software Engineer where I can apply my
+            programming skills, contribute to real-world projects, and continue
+            growing through collaboration and innovation.
+        </p>
+
+        <br>
+
+        <h3>Technical Skills</h3>
+        <p>* Python</p>
+        <p>* Java</p>
+        <p>* SQL</p>
+        <p>* Data Structures & Algorithms</p>
+
+        <br>
+
+        <h3>Personal Skills</h3>
+        <p>* Communication</p>
+        <p>* Teamwork</p>
+        <p>* Problem Solving</p>
+        <p>* Critical Thinking</p>
+
+        <br>
+
+        <h3>Languages</h3>
+        <p>* English</p>
+        <p>* Hindi</p>
+        <p>* Telugu</p>
+        <p>* Urdu</p>
+
+        <br>
+
+        <h3>Education</h3>
+
+        <p><b>Integrated M.Tech (CSE)</b></p>
+        <p>VIT-AP University, Andhra Pradesh</p>
+        <p>Year of Graduation: 2028</p>
+        <p>CGPA: 8.89</p>
+
+        <br>
+
+        <p><b>12th Grade (PCM)</b></p>
+        <p>Sri Swarnandhara Bharathi Junior College</p>
+        <p>Gudur, Andhra Pradesh</p>
+        <p>Percentage: 96.5%</p>
+
+        <br>
+
+        <p><b>10th Grade</b></p>
+        <p>Ratnam High School</p>
+        <p>Gudur, Andhra Pradesh</p>
+        <p>Percentage: 98%</p>
+
+        <br>
+
+        <h3>Projects</h3>
+
+        <h4>Human Resource Management Website</h4>
+        <p>
+            Description: Developed the frontend of a Human Resource
+            Management Website using HTML, CSS, and JavaScript.
+        </p>
+        <p>
+            Features: Login, View Personal Details, Attendance,
+            Salary Details, Apply Leave.
+        </p>
+
+        <h4>Gaming Controller Using Arduino</h4>
+        <p>
+            Description: Built a gaming controller using Arduino
+            for the Engineering Clinics project.
+        </p>
+        <p>
+            Achievement: Selected for Engineering Expo –
+            1 of only 37 projects chosen from 881 entries.
+        </p>
+
+        <h4>AgriCare</h4>
+        <p>
+            Description: Developed a Machine Learning system
+            that identifies crop diseases using leaf images and
+            recommends suitable crops based on soil and weather conditions.
+        </p>
+
+        <h4>Automatic Essay Grading System</h4>
+        <p>
+            Description: Developed a Deep Learning based Automated
+            Essay Grading System using the BERT model to grade essays
+            and provide feedback.
+        </p>
+        <p>
+            Achievement: Selected for Engineering Expo –
+            1 of only 76 projects chosen from 1006 entries.
+        </p>
+
+        <br>
+
+        <h3>Experience</h3>
+        <p><b>GDGoC VIT-AP</b> (October 2024 - Present)</p>
+        <p>* Member of GDG App Development Team.</p>
+        <p>* Contributed to developing the GDG App.</p>
+        <p>* Participated in Google's 2025 Solution Challenge.</p>
+        <p>* Participated in Gen AI Study Jams via Google Cloud Skill Boost.</p>
+
+        <br>
+
+        <h3>Declaration</h3>
+        <p>
+            I hereby declare that the details furnished above are true and correct.
+            The information presented in this resume accurately reflects my
+            qualifications and experience.
+        </p>
+
+    </div>
 
 </body>
+
 </html>
